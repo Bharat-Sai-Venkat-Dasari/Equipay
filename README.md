@@ -28,56 +28,35 @@ The application identifies potential compensation disparities, supports salary a
 
 ## Dataset Generation
 
-The project includes a synthetic dataset generator:
+EquiPay includes a deterministic synthetic data generator that creates employees, roles, levels, locations, compensation bands, salary histories, and labeled audit scenarios.
 
-generator/generate_data.py
-
-To generate the dataset, run:
+### Generate 5,000 employees
 
 ```powershell
-python -m generator.generate_data
-
-## Evaluation Results
-
-The evaluation identified all 10 labeled synthetic disparity cases.
-
-- True positives: 10
-- False negatives: 0
-- Recall on labeled disparity cases: 100%
-
-The other 50 cases are scenario-label checks rather than independent operational detections. Precision, accuracy, and false-positive rate have not been established.
-
-## Installation
-
-Create a virtual environment:
-
-```powershell
-python -m venv venv
+python -m generator.generate_data --employees 5000 --seed 20261022
 ```
 
-Activate it on Windows:
+The `--employees` argument controls the dataset size, while `--seed` supports reproducible generation.
 
-```powershell
-.\venv\Scripts\Activate.ps1
-```
+Generated CSV and JSON exports are stored in the `data/` directory.
 
-Install dependencies:
+**Note:** Run the generator only during initial setup or when intentionally regenerating the dataset. Existing database records may be affected.
 
-```powershell
-python -m pip install -r requirements.txt
-```
-
-Start the application:
+### Start the application
 
 ```powershell
 python app.py
 ```
 
-Open the dashboard at:
+Dashboard: http://127.0.0.1:5000
 
-`http://127.0.0.1:5000`
+### Run automated tests
 
-The application requires the project database to be populated using its dataset-generation scripts before the full dashboard and audit workflows can be demonstrated.
+```powershell
+python -m pytest tests/test_project.py -v
+```
+
+Current verified result: 6 tests passed.
 
 ## Testing
 
