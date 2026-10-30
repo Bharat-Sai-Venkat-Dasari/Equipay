@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EquiPay | Compensation Equity Audit</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">E</div>
+                <div>
+                    <h4>EquiPay</h4>
+                    <small>Compensation Audit</small>
+                </div>
+            </div>
+
+            <div class="sidebar-label">WORKSPACE</div>
+
+            <nav class="nav flex-column">
+                <a class="nav-link active" href="#overview">
+                    Dashboard
+                </a>
+                <a class="nav-link" href="#employees">
+                    Employees
+                </a>
+                <a class="nav-link" href="#analysis">
+                    Compensation Analysis
+                </a>
+                <a class="nav-link" href="#findings">
+                    Audit Findings
+                </a>
+                <a class="nav-link" href="#approvals">
+                    Adjustment Approvals
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <span class="status-dot"></span>
+                Local Development
+                <small>Yotta AI Assessment</small>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div>
+                    <h1>Compensation Equity Audit</h1>
+                    <p>
+                        Employee compensation analysis,
+                        salary bands and review findings
+                    </p>
+                </div>
+                <span class="environment-badge">
+                    Synthetic Dataset
+                </span>
+            </header>
+
+            <div id="appAlert"
+                 class="alert alert-danger d-none"
+                 role="alert"></div>
+
+            <section id="overview">
+                <div class="section-heading">
+                    <div>
+                        <h2>Overview</h2>
+                        <p>Summary of your generated data</p>
+                    </div>
+                    <button class="btn btn-outline-primary btn-sm"
+                            id="refreshBtn">
+                        Refresh Data
+                    </button>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="stat-card">
+                            <span>Employees</span>
+                            <h3 id="employeeCount">—</h3>
+                            <small>Generated workforce</small>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="stat-card">
+                            <span>Compensation Bands</span>
+                            <h3 id="bandCount">—</h3>
+                            <small>Effective-dated bands</small>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="stat-card">
+                            <span>Salary Records</span>
+                            <h3 id="salaryCount">—</h3>
+                            <small>Historical transactions</small>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="stat-card">
+                            <span>Test Scenarios</span>
+                            <h3 id="scenarioCount">—</h3>
+                            <small>Labeled synthetic cases</small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="employees" class="content-section">
+                <div class="section-heading">
+                    <div>
+                        <h2>Employee Directory</h2>
+                        <p>
+                            Select an employee to inspect
+                            compensation details
+                        </p>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead>
+                                <tr>
+                                    <th>Employee ID</th>
+                                    <th>Name</th>
+                                    <th>Role</th>
+                                    <th>Level</th>
+                                    <th>Location</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="employeeTable">
+                                <tr>
+                                    <td colspan="6" class="text-center">
+                                        Loading employees...
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="pagination-bar">
+                        <span id="pageInfo">Page 1</span>
+                        <div class="d-flex gap-2">
+                            <button id="prevPage"
+                                    class="btn btn-outline-secondary btn-sm">
+                                Previous
+                            </button>
+                            <button id="nextPage"
+                                    class="btn btn-outline-secondary btn-sm">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="analysis" class="content-section">
+                <div class="section-heading">
+                    <div>
+                        <h2>Compensation Analysis</h2>
+                        <p>
+                            Calculate band position,
+                            compa-ratio and peer comparison
+                        </p>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <form id="analysisForm" class="analysis-form">
+                        <div class="flex-grow-1">
+                            <label for="employeeId"
+                                   class="form-label">
+                                Employee ID
+                            </label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="employeeId"
+                                value="EMP-000001"
+                                placeholder="EMP-000001"
+                                required
+                            >
+                        </div>
+
+                        <button type="submit"
+                                class="btn btn-primary">
+                            Analyze Employee
+                        </button>
+                    </form>
+
+                    <div id="analysisPlaceholder"
+                         class="empty-state">
+                        Enter an employee ID and select
+                        Analyze Employee.
+                    </div>
+
+                    <div id="analysisResults" class="d-none">
+                        <div class="employee-summary">
+                            <div>
+                                <h3 id="selectedName">—</h3>
+                                <p id="selectedDetails">—</p>
+                            </div>
+                            <span id="bandStatus"
+                                  class="status-pill">
+                                —
+                            </span>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <div class="metric-box">
+                                    <span>Compa-ratio</span>
+                                    <h3 id="compaRatio">—</h3>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="metric-box">
+                                    <span>Band Position</span>
+                                    <h3 id="bandPosition">—</h3>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="metric-box">
+                                    <span>Peer Salary Gap</span>
+                                    <h3 id="peerGap">—</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="details-grid">
+                            <div>
+                                <span>Actual Salary</span>
+                                <strong id="actualSalary">—</strong>
+                            </div>
+                            <div>
+                                <span>FTE</span>
+                                <strong id="fteValue">—</strong>
+                            </div>
+                            <div>
+                                <span>Full-time Salary</span>
+                                <strong id="fullTimeSalary">—</strong>
+                            </div>
+                            <div>
+                                <span>Normalized Salary (INR)</span>
+                                <strong id="normalizedSalary">—</strong>
+                            </div>
+                            <div>
+                                <span>Band Minimum</span>
+                                <strong id="bandMinimum">—</strong>
+                            </div>
+                            <div>
+                                <span>Band Midpoint</span>
+                                <strong id="bandMidpoint">—</strong>
+                            </div>
+                            <div>
+                                <span>Band Maximum</span>
+                                <strong id="bandMaximum">—</strong>
+                            </div>
+                            <div>
+                                <span>Comparable Peers</span>
+                                <strong id="peerCount">—</strong>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <h4 class="subheading">Band Position</h4>
+                            <div class="progress" style="height: 12px">
+                                <div id="bandProgress"
+                                     class="progress-bar"
+                                     role="progressbar"
+                                     style="width: 0%">
+                                </div>
+                            </div>
+                            <small class="text-muted">
+                                The bar is capped at 0–100%.
+                                The actual position is shown above.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="findings" class="content-section">
+                <div class="section-heading">
+                    <div>
+                        <h2>Audit Findings</h2>
+                        <p>
+                            Rule-based findings for the
+                            selected employee
+                        </p>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div id="findingsList" class="empty-state">
+                        Analyze an employee to view findings.
+                    </div>
+                </div>
+            </section>
+
+            
+<section id="approvals" class="content-section">
+    <div class="section-heading">
+        <div>
+            <h2>Adjustment Proposals & Approvals</h2>
+            <p>
+                Submit salary adjustments and review
+                their approval history
+            </p>
+        </div>
+        <button
+            class="btn btn-outline-primary btn-sm"
+            id="refreshProposals"
+            type="button">
+            Refresh Proposals
+        </button>
+    </div>
+
+    <div class="row g-3">
+        <div class="col-lg-5">
+            <div class="panel h-100">
+                <h4 class="subheading mb-3">
+                    Create Adjustment Proposal
+                </h4>
+
+                <form id="proposalForm">
+                    <div class="mb-3">
+                        <label class="form-label"
+                               for="proposalEmployee">
+                            Employee ID
+                        </label>
+                        <input
+                            id="proposalEmployee"
+                            class="form-control"
+                            value="EMP-000001"
+                            required
+                        >
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label"
+                               for="proposedSalary">
+                            Proposed Annual Salary
+                        </label>
+                        <input
+                            id="proposedSalary"
+                            class="form-control"
+                            type="number"
+                            min="0.01"
+                            step="0.01"
+                            required
+                        >
+                        <small class="text-muted">
+                            Enter the amount in the employee's
+                            existing salary currency.
+                        </small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label"
+                               for="proposalCreator">
+                            HR Representative
+                        </label>
+                        <input
+                            id="proposalCreator"
+                            class="form-control"
+                            value="HR Demo"
+                            required
+                        >
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label"
+                               for="proposalReason">
+                            Justification
+                        </label>
+                        <textarea
+                            id="proposalReason"
+                            class="form-control"
+                            rows="3"
+                            required
+                            placeholder="Explain why this salary adjustment is needed"
+                        ></textarea>
+                    </div>
+
+                    <button
+                        class="btn btn-primary w-100"
+                        type="submit">
+                        Create Proposal
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-lg-7">
+            <div class="panel h-100">
+                <h4 class="subheading mb-3">
+                    Proposal History
+                </h4>
+
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Proposal</th>
+                                <th>Employee</th>
+                                <th>Salary</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="proposalTable">
+                            <tr>
+                                <td colspan="5"
+                                    class="text-center">
+                                    Loading proposals...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel mt-3">
+        <h4 class="subheading mb-3">
+            Selected Proposal
+        </h4>
+
+        <div id="proposalDetails" class="empty-state">
+            Select a proposal to view its details.
+        </div>
+
+        <div id="proposalActions" class="d-none">
+            <div class="row g-3 mt-2">
+                <div class="col-md-6">
+                    <label class="form-label"
+                           for="reviewerName">
+                        Reviewer Name
+                    </label>
+                    <input
+                        id="reviewerName"
+                        class="form-control"
+                        value="Demo Reviewer"
+                    >
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label"
+                           for="reviewReason">
+                        Decision Reason
+                    </label>
+                    <input
+                        id="reviewReason"
+                        class="form-control"
+                        placeholder="Required reason"
+                    >
+                </div>
+            </div>
+
+            <div class="d-flex gap-2 flex-wrap mt-3">
+                <button id="managerApprove"
+                        class="btn btn-success">
+                    Manager Approve
+                </button>
+                <button id="managerReject"
+                        class="btn btn-outline-danger">
+                    Manager Reject
+                </button>
+                <button id="hrApprove"
+                        class="btn btn-success">
+                    HR Approve
+                </button>
+                <button id="hrReject"
+                        class="btn btn-outline-danger">
+                    HR Reject
+                </button>
+                <button id="applyAdjustment"
+                        class="btn btn-primary">
+                    Apply Approved Adjustment
+                </button>
+            </div>
+        </div>
+
+        <h4 class="subheading mt-4">
+            Immutable Event History
+        </h4>
+
+        <div id="auditTimeline" class="audit-timeline">
+            <p class="text-muted">
+                Audit events will appear here.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+            <footer class="footer">
+                EquiPay • Synthetic data only • Local assessment prototype
+            </footer>
+        </main>
+    </div>
+
+    <script
+        src="{{ url_for('static', filename='js/script.js') }}">
+    </script>
+</body>
+</html>

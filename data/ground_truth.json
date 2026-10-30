@@ -1,0 +1,602 @@
+[
+  {
+    "case_id": "CASE-000001",
+    "employee_id": "EMP-001318",
+    "salary_id": "SAL-EMP-001318-2026-01",
+    "issue_type": "EXPIRED_BAND",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-EXPIRED_BAND",
+    "explanation": "Injected synthetic evaluation case: EXPIRED_BAND"
+  },
+  {
+    "case_id": "CASE-000002",
+    "employee_id": "EMP-002399",
+    "salary_id": "SAL-EMP-002399-2026-01",
+    "issue_type": "FTE_NOT_NORMALIZED",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-FTE_NOT_NORMALIZED",
+    "explanation": "Injected synthetic evaluation case: FTE_NOT_NORMALIZED"
+  },
+  {
+    "case_id": "CASE-000003",
+    "employee_id": "EMP-001932",
+    "salary_id": "SAL-EMP-001932-2026-01",
+    "issue_type": "CURRENCY_CONVERSION_MISSING",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-CURRENCY_CONVERSION_MISSING",
+    "explanation": "Injected synthetic evaluation case: CURRENCY_CONVERSION_MISSING"
+  },
+  {
+    "case_id": "CASE-000004",
+    "employee_id": "EMP-003583",
+    "salary_id": "SAL-EMP-003583-2026-01",
+    "issue_type": "UNAPPROVED_ADJUSTMENT",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-UNAPPROVED_ADJUSTMENT",
+    "explanation": "Injected synthetic evaluation case: UNAPPROVED_ADJUSTMENT"
+  },
+  {
+    "case_id": "CASE-000005",
+    "employee_id": "EMP-003554",
+    "salary_id": "SAL-EMP-003554-2026-01",
+    "issue_type": "INVALID_COMPARABLE_GROUP",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-INVALID_COMPARABLE_GROUP",
+    "explanation": "Injected synthetic evaluation case: INVALID_COMPARABLE_GROUP"
+  },
+  {
+    "case_id": "CASE-000006",
+    "employee_id": "EMP-002536",
+    "salary_id": "SAL-EMP-002536-2026-01",
+    "issue_type": "UNEXPLAINED_DISPARITY",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-UNEXPLAINED_DISPARITY",
+    "explanation": "Injected synthetic evaluation case: UNEXPLAINED_DISPARITY"
+  },
+  {
+    "case_id": "CASE-000007",
+    "employee_id": "EMP-001024",
+    "salary_id": "SAL-EMP-001024-2026-01",
+    "issue_type": "EXPIRED_BAND",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-EXPIRED_BAND",
+    "explanation": "Injected synthetic evaluation case: EXPIRED_BAND"
+  },
+  {
+    "case_id": "CASE-000008",
+    "employee_id": "EMP-003289",
+    "salary_id": "SAL-EMP-003289-2026-01",
+    "issue_type": "FTE_NOT_NORMALIZED",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-FTE_NOT_NORMALIZED",
+    "explanation": "Injected synthetic evaluation case: FTE_NOT_NORMALIZED"
+  },
+  {
+    "case_id": "CASE-000009",
+    "employee_id": "EMP-004423",
+    "salary_id": "SAL-EMP-004423-2026-01",
+    "issue_type": "CURRENCY_CONVERSION_MISSING",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-CURRENCY_CONVERSION_MISSING",
+    "explanation": "Injected synthetic evaluation case: CURRENCY_CONVERSION_MISSING"
+  },
+  {
+    "case_id": "CASE-000010",
+    "employee_id": "EMP-003526",
+    "salary_id": "SAL-EMP-003526-2026-01",
+    "issue_type": "UNAPPROVED_ADJUSTMENT",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-UNAPPROVED_ADJUSTMENT",
+    "explanation": "Injected synthetic evaluation case: UNAPPROVED_ADJUSTMENT"
+  },
+  {
+    "case_id": "CASE-000011",
+    "employee_id": "EMP-003192",
+    "salary_id": "SAL-EMP-003192-2026-01",
+    "issue_type": "INVALID_COMPARABLE_GROUP",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-INVALID_COMPARABLE_GROUP",
+    "explanation": "Injected synthetic evaluation case: INVALID_COMPARABLE_GROUP"
+  },
+  {
+    "case_id": "CASE-000012",
+    "employee_id": "EMP-004574",
+    "salary_id": "SAL-EMP-004574-2026-01",
+    "issue_type": "UNEXPLAINED_DISPARITY",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-UNEXPLAINED_DISPARITY",
+    "explanation": "Injected synthetic evaluation case: UNEXPLAINED_DISPARITY"
+  },
+  {
+    "case_id": "CASE-000013",
+    "employee_id": "EMP-004569",
+    "salary_id": "SAL-EMP-004569-2026-01",
+    "issue_type": "EXPIRED_BAND",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-EXPIRED_BAND",
+    "explanation": "Injected synthetic evaluation case: EXPIRED_BAND"
+  },
+  {
+    "case_id": "CASE-000014",
+    "employee_id": "EMP-004635",
+    "salary_id": "SAL-EMP-004635-2026-01",
+    "issue_type": "FTE_NOT_NORMALIZED",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-FTE_NOT_NORMALIZED",
+    "explanation": "Injected synthetic evaluation case: FTE_NOT_NORMALIZED"
+  },
+  {
+    "case_id": "CASE-000015",
+    "employee_id": "EMP-003638",
+    "salary_id": "SAL-EMP-003638-2026-01",
+    "issue_type": "CURRENCY_CONVERSION_MISSING",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-CURRENCY_CONVERSION_MISSING",
+    "explanation": "Injected synthetic evaluation case: CURRENCY_CONVERSION_MISSING"
+  },
+  {
+    "case_id": "CASE-000016",
+    "employee_id": "EMP-002153",
+    "salary_id": "SAL-EMP-002153-2026-01",
+    "issue_type": "UNAPPROVED_ADJUSTMENT",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-UNAPPROVED_ADJUSTMENT",
+    "explanation": "Injected synthetic evaluation case: UNAPPROVED_ADJUSTMENT"
+  },
+  {
+    "case_id": "CASE-000017",
+    "employee_id": "EMP-001709",
+    "salary_id": "SAL-EMP-001709-2026-01",
+    "issue_type": "INVALID_COMPARABLE_GROUP",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-INVALID_COMPARABLE_GROUP",
+    "explanation": "Injected synthetic evaluation case: INVALID_COMPARABLE_GROUP"
+  },
+  {
+    "case_id": "CASE-000018",
+    "employee_id": "EMP-000219",
+    "salary_id": "SAL-EMP-000219-2026-01",
+    "issue_type": "UNEXPLAINED_DISPARITY",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-UNEXPLAINED_DISPARITY",
+    "explanation": "Injected synthetic evaluation case: UNEXPLAINED_DISPARITY"
+  },
+  {
+    "case_id": "CASE-000019",
+    "employee_id": "EMP-001822",
+    "salary_id": "SAL-EMP-001822-2026-01",
+    "issue_type": "EXPIRED_BAND",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-EXPIRED_BAND",
+    "explanation": "Injected synthetic evaluation case: EXPIRED_BAND"
+  },
+  {
+    "case_id": "CASE-000020",
+    "employee_id": "EMP-000467",
+    "salary_id": "SAL-EMP-000467-2026-01",
+    "issue_type": "FTE_NOT_NORMALIZED",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-FTE_NOT_NORMALIZED",
+    "explanation": "Injected synthetic evaluation case: FTE_NOT_NORMALIZED"
+  },
+  {
+    "case_id": "CASE-000021",
+    "employee_id": "EMP-000764",
+    "salary_id": "SAL-EMP-000764-2026-01",
+    "issue_type": "CURRENCY_CONVERSION_MISSING",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-CURRENCY_CONVERSION_MISSING",
+    "explanation": "Injected synthetic evaluation case: CURRENCY_CONVERSION_MISSING"
+  },
+  {
+    "case_id": "CASE-000022",
+    "employee_id": "EMP-004324",
+    "salary_id": "SAL-EMP-004324-2026-01",
+    "issue_type": "UNAPPROVED_ADJUSTMENT",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-UNAPPROVED_ADJUSTMENT",
+    "explanation": "Injected synthetic evaluation case: UNAPPROVED_ADJUSTMENT"
+  },
+  {
+    "case_id": "CASE-000023",
+    "employee_id": "EMP-000126",
+    "salary_id": "SAL-EMP-000126-2026-01",
+    "issue_type": "INVALID_COMPARABLE_GROUP",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-INVALID_COMPARABLE_GROUP",
+    "explanation": "Injected synthetic evaluation case: INVALID_COMPARABLE_GROUP"
+  },
+  {
+    "case_id": "CASE-000024",
+    "employee_id": "EMP-004182",
+    "salary_id": "SAL-EMP-004182-2026-01",
+    "issue_type": "UNEXPLAINED_DISPARITY",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-UNEXPLAINED_DISPARITY",
+    "explanation": "Injected synthetic evaluation case: UNEXPLAINED_DISPARITY"
+  },
+  {
+    "case_id": "CASE-000025",
+    "employee_id": "EMP-002128",
+    "salary_id": "SAL-EMP-002128-2026-01",
+    "issue_type": "EXPIRED_BAND",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-EXPIRED_BAND",
+    "explanation": "Injected synthetic evaluation case: EXPIRED_BAND"
+  },
+  {
+    "case_id": "CASE-000026",
+    "employee_id": "EMP-002960",
+    "salary_id": "SAL-EMP-002960-2026-01",
+    "issue_type": "FTE_NOT_NORMALIZED",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-FTE_NOT_NORMALIZED",
+    "explanation": "Injected synthetic evaluation case: FTE_NOT_NORMALIZED"
+  },
+  {
+    "case_id": "CASE-000027",
+    "employee_id": "EMP-002235",
+    "salary_id": "SAL-EMP-002235-2026-01",
+    "issue_type": "CURRENCY_CONVERSION_MISSING",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-CURRENCY_CONVERSION_MISSING",
+    "explanation": "Injected synthetic evaluation case: CURRENCY_CONVERSION_MISSING"
+  },
+  {
+    "case_id": "CASE-000028",
+    "employee_id": "EMP-000037",
+    "salary_id": "SAL-EMP-000037-2026-01",
+    "issue_type": "UNAPPROVED_ADJUSTMENT",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-UNAPPROVED_ADJUSTMENT",
+    "explanation": "Injected synthetic evaluation case: UNAPPROVED_ADJUSTMENT"
+  },
+  {
+    "case_id": "CASE-000029",
+    "employee_id": "EMP-002956",
+    "salary_id": "SAL-EMP-002956-2026-01",
+    "issue_type": "INVALID_COMPARABLE_GROUP",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-INVALID_COMPARABLE_GROUP",
+    "explanation": "Injected synthetic evaluation case: INVALID_COMPARABLE_GROUP"
+  },
+  {
+    "case_id": "CASE-000030",
+    "employee_id": "EMP-003458",
+    "salary_id": "SAL-EMP-003458-2026-01",
+    "issue_type": "UNEXPLAINED_DISPARITY",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-UNEXPLAINED_DISPARITY",
+    "explanation": "Injected synthetic evaluation case: UNEXPLAINED_DISPARITY"
+  },
+  {
+    "case_id": "CASE-000031",
+    "employee_id": "EMP-003907",
+    "salary_id": "SAL-EMP-003907-2026-01",
+    "issue_type": "EXPIRED_BAND",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-EXPIRED_BAND",
+    "explanation": "Injected synthetic evaluation case: EXPIRED_BAND"
+  },
+  {
+    "case_id": "CASE-000032",
+    "employee_id": "EMP-004867",
+    "salary_id": "SAL-EMP-004867-2026-01",
+    "issue_type": "FTE_NOT_NORMALIZED",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-FTE_NOT_NORMALIZED",
+    "explanation": "Injected synthetic evaluation case: FTE_NOT_NORMALIZED"
+  },
+  {
+    "case_id": "CASE-000033",
+    "employee_id": "EMP-001506",
+    "salary_id": "SAL-EMP-001506-2026-01",
+    "issue_type": "CURRENCY_CONVERSION_MISSING",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-CURRENCY_CONVERSION_MISSING",
+    "explanation": "Injected synthetic evaluation case: CURRENCY_CONVERSION_MISSING"
+  },
+  {
+    "case_id": "CASE-000034",
+    "employee_id": "EMP-000868",
+    "salary_id": "SAL-EMP-000868-2026-01",
+    "issue_type": "UNAPPROVED_ADJUSTMENT",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-UNAPPROVED_ADJUSTMENT",
+    "explanation": "Injected synthetic evaluation case: UNAPPROVED_ADJUSTMENT"
+  },
+  {
+    "case_id": "CASE-000035",
+    "employee_id": "EMP-002151",
+    "salary_id": "SAL-EMP-002151-2026-01",
+    "issue_type": "INVALID_COMPARABLE_GROUP",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-INVALID_COMPARABLE_GROUP",
+    "explanation": "Injected synthetic evaluation case: INVALID_COMPARABLE_GROUP"
+  },
+  {
+    "case_id": "CASE-000036",
+    "employee_id": "EMP-000991",
+    "salary_id": "SAL-EMP-000991-2026-01",
+    "issue_type": "UNEXPLAINED_DISPARITY",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-UNEXPLAINED_DISPARITY",
+    "explanation": "Injected synthetic evaluation case: UNEXPLAINED_DISPARITY"
+  },
+  {
+    "case_id": "CASE-000037",
+    "employee_id": "EMP-003207",
+    "salary_id": "SAL-EMP-003207-2026-01",
+    "issue_type": "EXPIRED_BAND",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-EXPIRED_BAND",
+    "explanation": "Injected synthetic evaluation case: EXPIRED_BAND"
+  },
+  {
+    "case_id": "CASE-000038",
+    "employee_id": "EMP-002131",
+    "salary_id": "SAL-EMP-002131-2026-01",
+    "issue_type": "FTE_NOT_NORMALIZED",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-FTE_NOT_NORMALIZED",
+    "explanation": "Injected synthetic evaluation case: FTE_NOT_NORMALIZED"
+  },
+  {
+    "case_id": "CASE-000039",
+    "employee_id": "EMP-001712",
+    "salary_id": "SAL-EMP-001712-2026-01",
+    "issue_type": "CURRENCY_CONVERSION_MISSING",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-CURRENCY_CONVERSION_MISSING",
+    "explanation": "Injected synthetic evaluation case: CURRENCY_CONVERSION_MISSING"
+  },
+  {
+    "case_id": "CASE-000040",
+    "employee_id": "EMP-003911",
+    "salary_id": "SAL-EMP-003911-2026-01",
+    "issue_type": "UNAPPROVED_ADJUSTMENT",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-UNAPPROVED_ADJUSTMENT",
+    "explanation": "Injected synthetic evaluation case: UNAPPROVED_ADJUSTMENT"
+  },
+  {
+    "case_id": "CASE-000041",
+    "employee_id": "EMP-001237",
+    "salary_id": "SAL-EMP-001237-2026-01",
+    "issue_type": "INVALID_COMPARABLE_GROUP",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-INVALID_COMPARABLE_GROUP",
+    "explanation": "Injected synthetic evaluation case: INVALID_COMPARABLE_GROUP"
+  },
+  {
+    "case_id": "CASE-000042",
+    "employee_id": "EMP-001701",
+    "salary_id": "SAL-EMP-001701-2026-01",
+    "issue_type": "UNEXPLAINED_DISPARITY",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-UNEXPLAINED_DISPARITY",
+    "explanation": "Injected synthetic evaluation case: UNEXPLAINED_DISPARITY"
+  },
+  {
+    "case_id": "CASE-000043",
+    "employee_id": "EMP-003762",
+    "salary_id": "SAL-EMP-003762-2026-01",
+    "issue_type": "EXPIRED_BAND",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-EXPIRED_BAND",
+    "explanation": "Injected synthetic evaluation case: EXPIRED_BAND"
+  },
+  {
+    "case_id": "CASE-000044",
+    "employee_id": "EMP-003984",
+    "salary_id": "SAL-EMP-003984-2026-01",
+    "issue_type": "FTE_NOT_NORMALIZED",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-FTE_NOT_NORMALIZED",
+    "explanation": "Injected synthetic evaluation case: FTE_NOT_NORMALIZED"
+  },
+  {
+    "case_id": "CASE-000045",
+    "employee_id": "EMP-003890",
+    "salary_id": "SAL-EMP-003890-2026-01",
+    "issue_type": "CURRENCY_CONVERSION_MISSING",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-CURRENCY_CONVERSION_MISSING",
+    "explanation": "Injected synthetic evaluation case: CURRENCY_CONVERSION_MISSING"
+  },
+  {
+    "case_id": "CASE-000046",
+    "employee_id": "EMP-002808",
+    "salary_id": "SAL-EMP-002808-2026-01",
+    "issue_type": "UNAPPROVED_ADJUSTMENT",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-UNAPPROVED_ADJUSTMENT",
+    "explanation": "Injected synthetic evaluation case: UNAPPROVED_ADJUSTMENT"
+  },
+  {
+    "case_id": "CASE-000047",
+    "employee_id": "EMP-001464",
+    "salary_id": "SAL-EMP-001464-2026-01",
+    "issue_type": "INVALID_COMPARABLE_GROUP",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-INVALID_COMPARABLE_GROUP",
+    "explanation": "Injected synthetic evaluation case: INVALID_COMPARABLE_GROUP"
+  },
+  {
+    "case_id": "CASE-000048",
+    "employee_id": "EMP-004331",
+    "salary_id": "SAL-EMP-004331-2026-01",
+    "issue_type": "UNEXPLAINED_DISPARITY",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-UNEXPLAINED_DISPARITY",
+    "explanation": "Injected synthetic evaluation case: UNEXPLAINED_DISPARITY"
+  },
+  {
+    "case_id": "CASE-000049",
+    "employee_id": "EMP-004427",
+    "salary_id": "SAL-EMP-004427-2026-01",
+    "issue_type": "EXPIRED_BAND",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-EXPIRED_BAND",
+    "explanation": "Injected synthetic evaluation case: EXPIRED_BAND"
+  },
+  {
+    "case_id": "CASE-000050",
+    "employee_id": "EMP-001209",
+    "salary_id": "SAL-EMP-001209-2026-01",
+    "issue_type": "FTE_NOT_NORMALIZED",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-FTE_NOT_NORMALIZED",
+    "explanation": "Injected synthetic evaluation case: FTE_NOT_NORMALIZED"
+  },
+  {
+    "case_id": "CASE-000051",
+    "employee_id": "EMP-001974",
+    "salary_id": "SAL-EMP-001974-2026-01",
+    "issue_type": "CURRENCY_CONVERSION_MISSING",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-CURRENCY_CONVERSION_MISSING",
+    "explanation": "Injected synthetic evaluation case: CURRENCY_CONVERSION_MISSING"
+  },
+  {
+    "case_id": "CASE-000052",
+    "employee_id": "EMP-003797",
+    "salary_id": "SAL-EMP-003797-2026-01",
+    "issue_type": "UNAPPROVED_ADJUSTMENT",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-UNAPPROVED_ADJUSTMENT",
+    "explanation": "Injected synthetic evaluation case: UNAPPROVED_ADJUSTMENT"
+  },
+  {
+    "case_id": "CASE-000053",
+    "employee_id": "EMP-000899",
+    "salary_id": "SAL-EMP-000899-2026-01",
+    "issue_type": "INVALID_COMPARABLE_GROUP",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-INVALID_COMPARABLE_GROUP",
+    "explanation": "Injected synthetic evaluation case: INVALID_COMPARABLE_GROUP"
+  },
+  {
+    "case_id": "CASE-000054",
+    "employee_id": "EMP-000687",
+    "salary_id": "SAL-EMP-000687-2026-01",
+    "issue_type": "UNEXPLAINED_DISPARITY",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-UNEXPLAINED_DISPARITY",
+    "explanation": "Injected synthetic evaluation case: UNEXPLAINED_DISPARITY"
+  },
+  {
+    "case_id": "CASE-000055",
+    "employee_id": "EMP-001557",
+    "salary_id": "SAL-EMP-001557-2026-01",
+    "issue_type": "EXPIRED_BAND",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-EXPIRED_BAND",
+    "explanation": "Injected synthetic evaluation case: EXPIRED_BAND"
+  },
+  {
+    "case_id": "CASE-000056",
+    "employee_id": "EMP-000450",
+    "salary_id": "SAL-EMP-000450-2026-01",
+    "issue_type": "FTE_NOT_NORMALIZED",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-FTE_NOT_NORMALIZED",
+    "explanation": "Injected synthetic evaluation case: FTE_NOT_NORMALIZED"
+  },
+  {
+    "case_id": "CASE-000057",
+    "employee_id": "EMP-002474",
+    "salary_id": "SAL-EMP-002474-2026-01",
+    "issue_type": "CURRENCY_CONVERSION_MISSING",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-CURRENCY_CONVERSION_MISSING",
+    "explanation": "Injected synthetic evaluation case: CURRENCY_CONVERSION_MISSING"
+  },
+  {
+    "case_id": "CASE-000058",
+    "employee_id": "EMP-000103",
+    "salary_id": "SAL-EMP-000103-2026-01",
+    "issue_type": "UNAPPROVED_ADJUSTMENT",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-UNAPPROVED_ADJUSTMENT",
+    "explanation": "Injected synthetic evaluation case: UNAPPROVED_ADJUSTMENT"
+  },
+  {
+    "case_id": "CASE-000059",
+    "employee_id": "EMP-003625",
+    "salary_id": "SAL-EMP-003625-2026-01",
+    "issue_type": "INVALID_COMPARABLE_GROUP",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-INVALID_COMPARABLE_GROUP",
+    "explanation": "Injected synthetic evaluation case: INVALID_COMPARABLE_GROUP"
+  },
+  {
+    "case_id": "CASE-000060",
+    "employee_id": "EMP-004661",
+    "salary_id": "SAL-EMP-004661-2026-01",
+    "issue_type": "UNEXPLAINED_DISPARITY",
+    "expected_label": 1,
+    "expected_decision": "FLAG_FOR_REVIEW",
+    "rule_id": "RULE-UNEXPLAINED_DISPARITY",
+    "explanation": "Injected synthetic evaluation case: UNEXPLAINED_DISPARITY"
+  }
+]

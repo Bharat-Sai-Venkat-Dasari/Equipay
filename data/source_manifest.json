@@ -1,0 +1,62 @@
+{
+  "seed": 20261022,
+  "provenance": "Fully synthetic data",
+  "files": {
+    "roles.csv": {
+      "rows": 20,
+      "sha256": "e17c8f91b0bb4ef58e184ef40efeeb9c974c4f83381604a9adf23f5a9c759dc4"
+    },
+    "levels.csv": {
+      "rows": 10,
+      "sha256": "8e11940307cd3f2bb965153a596e6e25d1876f515820818929570e017bb85bcb"
+    },
+    "locations.csv": {
+      "rows": 3,
+      "sha256": "4ccb514a7d1f316e20098a466d28596f0cc8e50986571c6088c7ce81eac24b75"
+    },
+    "employees.csv": {
+      "rows": 5000,
+      "sha256": "12e122f79028c072dd44440d5f4161c02410c9b962746dc139c1a6f6e9828dd6"
+    },
+    "compensation_bands.csv": {
+      "rows": 1800,
+      "sha256": "dfc3d1113e4a5b161bb039db8677dfb0bf3eb023e24678df56367e4e789c8794"
+    },
+    "salary_records.csv": {
+      "rows": 15000,
+      "sha256": "8ba4d98215c999f92ad6c334f351042f52f9e5432a470d065dc8095304d617c6"
+    },
+    "performance_evidence.csv": {
+      "rows": 15000,
+      "sha256": "62e8ef26a3c7d9e77617b9503fac2dbd955783627a4fed0fe9391b178a5db310"
+    },
+    "tenure.csv": {
+      "rows": 5000,
+      "sha256": "74d9a716fe313d80c559c4f30ad1da8839408eb7fbe39f8dc1aaf4ad9072694a"
+    },
+    "promotions.csv": {
+      "rows": 825,
+      "sha256": "4c0a58d4e15cd445d9101995ac1c45bf9ea887c0c4829cd71952c30df647512b"
+    },
+    "fte_history.csv": {
+      "rows": 5395,
+      "sha256": "48df34e5630e276d0c4191d11c9040b3a7c89d1ee06fe4e069d434e28f0a2fc9"
+    },
+    "exchange_rates.csv": {
+      "rows": 6,
+      "sha256": "5fb1afb66b78b849fe7c47282c86295167044e32adeee58926b38c98c15f44ca"
+    },
+    "synthetic_issues.csv": {
+      "rows": 60,
+      "sha256": "2565f82790d0a1d2a1858e922cb5da01c35d1d4388fa649dfd059a1f3226571f"
+    },
+    "ground_truth.json": {
+      "rows": 60,
+      "sha256": "83769e996bc662011f0a36127626dc41e19d0f09973eb1d2e2015f65da7ea4f3"
+    },
+    "ground_truth.csv": {
+      "rows": 60,
+      "sha256": "cf73bde930fc62e3dbd8863a87c2cff24df29b294810f41c3626f6001042f250"
+    }
+  }
+}
